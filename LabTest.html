@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <head>
+        <title>Lab Test</title>
+        <style>
+            #district{
+                font-size: 15px;
+            }
+            header{
+                text-align: center;
+            }
+            footer{
+                position: relative;
+                text-align:left;
+                font-size: 10px;
+                margin-top: 10%;
+                right: 10%;
+            }
+            input:focus{
+            outline: none !important;
+            border: none;
+            border-bottom:1px solid black;
+            }
+            button{
+            display: block;
+            margin: 20px;
+            width: 70px;
+            border-radius: 4px;
+            height: 25px;
+            color: white;
+            font-size: 16px;
+            float:left;
+            border: none;
+            background-color: rgb(175, 102, 243);
+            }           
+            
+            img{
+                position: fixed;
+                left:45%;
+                top: 0.025%;
+            }
+    
+            input {
+                border: 0;
+                outline: 0;
+                background: transparent;
+                border-bottom: 1px solid black;
+            }
+            section{
+                position: absolute;
+                top: 5%;
+                left: 10%;
+                width: 50%;
+            }
+            
+        </style>
+    </head>
+    <section>
+        <body>
+            <img src="Images\Lab-Test\lab-test.jpg">
+            
+            
+
+                <form action="">
+                    <h3>1.Your Contact Details</h3>
+                    <input type="text" required spellcheck="true" placeholder="Full Name"> </input>
+                    <input type="number" required placeholder="Patient Id if exists"> </input><br><br>
+                    <input type="tel" required placeholder="Contact.No" pattern="[6-9]{1}[0-9]{9}"> </input>
+                    <input type="email" required placeholder ="Email id"> </input>
+
+                    <h3>2.Your Address</h3>
+                    <input type="number" required placeholder="H.No"> </input>
+                    <input type="text" required spellcheck="true" placeholder="Street"> </input><br><br>
+                    <input type="text" required spellcheck="true" placeholder="Area"> </input><br><br>
+                    <h4>District</h4>
+                    <select id="district" name="district" required>
+                        <option value="DC1">Choose</option>
+                        <option value="DC2">Chennai</option>
+                        <option value="DC3">Chengalpattu</option>
+                        <option value="DC4">Pondicherry</option>
+                    </select>
+                
+                    
+                    <h3>3.Test type</h3>
+                    <p>Check atleast one box without fail</p>
+                    <input type="checkbox" id="Test_type1" name="Test_type1" value="CBC"></input>
+                        <label for="Test_type1">Comple Blood Count(CBC)</label><br>
+                    <input type="checkbox" id="Test_type2" name="Test_type2" value="Complete Urine"></input>
+                        <label for="Test_type2">Complete Urine</label><br>
+                    <input type="checkbox" id="Test_type3" name="Test_type3" value="Liquid Profile"></input>
+                        <label for="Test_type3">Liquid Profile</label><br>                 
+                    <input type="checkbox" id="Test_type4" name="Test_type4" value="TSH"></input>
+                        <label for="Test_type4">Thyroid Stimulating Hormone(TSH)</label><br>
+                    <input type="checkbox" id="Test_type5" nmae="Test_type5" value="Glucose Test"></input>
+                        <label for="Test_type5">Glucose Test</label>                    
+
+                    <h3>4.Harcopy of Report Required</h3>
+                    <input type="radio" id="Report_Req" name="Report" value="Yes" required></input>
+                        <label for="Report">Yes</label><br>
+                    <input type="radio" id="Report_NotReq" name="Report" value="No" required></input>
+                        <label for="Report">Yes</label><br>
+                
+                    <h3>5.Appointment</h3>
+                    <label for="Appointment_Date">Date:</label>
+                        <input type="date" id="Appointment_Date" name="Appointment_Date" value="date" required><br><br>
+                    <label for="Appointment_Time">Time:</label>
+                        <input type="time" id="Appointment_Time" name="Appointment_Time" value="time" required>
+
+                    <br><br>
+                    <div>
+                    <button type="submit">Submit</button>
+
+                    <button type="reset">Reset</button><br><br>
+                    </div>
+                    <footer>
+                        This form is only for demonstration purposes.<br>
+                        <symbol>Copyright &copy; 2022 GreatLearning
+                    </footer>
+                </form>
+    </section>
+
+                
+        </body>
+    
+
+</html>

@@ -1,0 +1,143 @@
+header h1{
+    background-color: rgb(72, 71, 71);
+    margin: 0%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.animation{
+    border: 2px solid steelblue;
+
+}
+#navigate{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+.menu{
+    margin: 0%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.menu li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu li{
+    padding: 10px;
+    display: inline-block;
+}
+.menu li:hover{
+    background-color: rgba(0, 0, 0, 0.7);;
+}
+.menu li:nth-child(2):hover #Dropdown_1, .menu li:nth-child(3):hover #Dropdown_2{
+    display: block;
+}
+#Dropdown_1, #Dropdown_2{
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    display: none;
+    top: 42.5px;
+    background-color: whitesmoke;
+    padding: 0%;
+}
+#Dropdown_1 li, #Dropdown_2 li{
+    display: block;
+}
+#Dropdown_1 li:hover, #Dropdown_2 li:hover{
+    background-color: gainsboro;
+}
+#Dropdown_1 li a, #Dropdown_2 li a{
+    color: steelblue;
+    font-size: 16px;
+}
+
+img.one {
+    position: absolute;
+    animation: FadeInOut 5s infinite alternate ease-in-out;
+    animation-delay: 2s;
+    max-zoom: 100%;
+}
+img.two {
+    position: relative;
+    animation: FadeIn 10s infinite alternate ease-in-out;
+    animation-delay: 1s;
+}
+@keyframes FadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes FadeIn {
+    50% {
+        opacity: 0;
+    }
+    100% {
+     opacity: 1;
+    }
+}
+#covidcare, #diabetescare{
+    margin: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    color: blue;
+    scroll-margin:0px;
+}
+h2,h4{
+    color: black;
+}
+
+.shopping{
+    position: relative;
+    border-radius: 10px;
+    margin: 5px;
+    width: 280px;
+    height: 330px;
+    border: none;
+    display: inline-block;
+    background-color: rgb(236, 238, 238);
+    padding: 4px;
+}
+.shopping:hover{
+    width: 300px;
+    height: 340px;          
+}
+.shopping img{
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;  
+}
+.btn{
+    position: relative;
+    left: 6%;            
+    text-align: center;
+    width: 250px;
+    display: block;
+    background-color: rgb(224, 228, 255); 
+    border: 0ch;
+    color: orangered;  
+    padding: 5px;
+}
+.btn::after{
+    background-color: antiquewhite;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+}
